@@ -2,10 +2,7 @@
   <div class="container">
     <div class="row" >
       <div class="col-sm-4 col-sm-offset-4">
-        <% @cocktails.each do |c| %>
-        <h2><%= c.name %></h2>
-        <% end %>
-        <%= link_to "New cocktail ?", new_cocktail_path %>
+        <%= render 'form' %>
       </div>
     </div>
   </div>
